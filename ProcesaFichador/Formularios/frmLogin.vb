@@ -110,6 +110,8 @@ Public Class frmLogin
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles Me.Load
         'Siempre al principio
         CheckUpdates()
+
+        lblVersion.Text &= " " & Application.ProductVersion
     End Sub
 
 
