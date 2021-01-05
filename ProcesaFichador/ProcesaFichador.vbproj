@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3C7284C-993D-409E-BF52-61324DA2A6FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProcesaFichador.My.MyApplication</StartupObject>
+    <RootNamespace>ProcesaFichador</RootNamespace>
+    <AssemblyName>ProcesaFichador</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\192.168.6.55\Publico\VbNetApps\Fichadas\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>119</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProcesaFichador.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProcesaFichador.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\if_tower_748987.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>344188ABCB975351850AE9733EACC17CB3CFEBB1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ProcesaFichador_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Conexion">
+      <HintPath>..\..\..\..\..\VStudio2015\Libraries\Libraries\Conexion.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.1.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.1.Extensions, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Employees.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LibrariesEmployees\Employees.Business\bin\Employees.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Employees.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LibrariesEmployees\Employees.Business\bin\Employees.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Employees.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LibrariesEmployees\Employees.Business\bin\Employees.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Encriptacion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\VStudio2015\Libraries\Libraries\Encriptacion.dll</HintPath>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=5.8.1.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Generador\WorkinDirectory\Libraries\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Lenox.Business">
+      <HintPath>..\..\..\..\..\VStudio2015\LibariesLenox\Lenox.Business\bin\Lenox.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Lenox.Data">
+      <HintPath>..\..\..\..\..\VStudio2015\LibariesLenox\Lenox.Business\bin\Lenox.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Lenox.Entities">
+      <HintPath>..\..\..\..\..\VStudio2015\LibariesLenox\Lenox.Business\bin\Lenox.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Turnos.Business">
+      <HintPath>..\..\Libraries\Turnos.Business\bin\Turnos.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Turnos.Data">
+      <HintPath>..\..\Libraries\Turnos.Business\bin\Turnos.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Turnos.Entities">
+      <HintPath>..\..\Libraries\Turnos.Business\bin\Turnos.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Turnos.GlobalFunctions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Generador\WorkinDirectory\Libraries\Turnos.GlobalFunctions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases del proyecto\AbmSharedFunctions.vb" />
+    <Compile Include="Clases del proyecto\CKT_DLL.vb" />
+    <Compile Include="FormsBase\frmBase.Designer.vb">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormsBase\frmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainParent.Designer.vb">
+      <DependentUpon>frmMainParent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainParent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\DTO\FichadaTRDTO.vb" />
+    <Compile Include="Formularios\ABMs\frmAbmAusenciaEmpleado.Designer.vb">
+      <DependentUpon>frmAbmAusenciaEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmAusenciaEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmConvenio.Designer.vb">
+      <DependentUpon>frmAbmConvenio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmConvenio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmEmpleado.Designer.vb">
+      <DependentUpon>frmAbmEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmFeriado.Designer.vb">
+      <DependentUpon>frmAbmFeriado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmFeriado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmFichadas.Designer.vb">
+      <DependentUpon>frmAbmFichadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmFichadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmGrupo.Designer.vb">
+      <DependentUpon>frmAbmGrupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmGrupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmHorario.Designer.vb">
+      <DependentUpon>frmAbmHorario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmHorario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmHorarioAdic.Designer.vb">
+      <DependentUpon>frmAbmHorarioAdic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmHorarioAdic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMs\FrmAbmTipoAusencia.Designer.vb">
+      <DependentUpon>FrmAbmTipoAusencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMs\FrmAbmTipoAusencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmUsuarios.Designer.vb">
+      <DependentUpon>frmAbmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABMs\frmAbmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmBusqueda.Designer.vb">
+      <DependentUpon>frmBusqueda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmBusqueda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmFichadasLectura.Designer.vb">
+      <DependentUpon>frmFichadasLectura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmFichadasLectura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblPedidoAusencia.Designer.vb">
+      <DependentUpon>frmTblPedidoAusencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblPedidoAusencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblUsuarios.Designer.vb">
+      <DependentUpon>frmTblUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblConvenios.Designer.vb">
+      <DependentUpon>frmTblConvenios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblConvenios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblEmpleados.Designer.vb">
+      <DependentUpon>frmTblEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblEventosFichadas.Designer.vb">
+      <DependentUpon>frmTblEventosFichadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblEventosFichadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblFeriados.Designer.vb">
+      <DependentUpon>frmTblFeriados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblFeriados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblGrupos.Designer.vb">
+      <DependentUpon>frmTblGrupos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblGrupos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblHorarios.Designer.vb">
+      <DependentUpon>frmTblHorarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblHorarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases del proyecto\GeneradorCadena.vb" />
+    <Compile Include="Formularios\Tablas\frmTblLiquidaciones.Designer.vb">
+      <DependentUpon>frmTblLiquidaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblLiquidaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblTipoAusencias.Designer.vb">
+      <DependentUpon>frmTblTipoAusencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblTipoAusencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblTraza.Designer.vb">
+      <DependentUpon>frmTblTraza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tablas\frmTblTraza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\DTO\Generic.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Models\DTO\AusenciasDTO.vb" />
+    <Compile Include="Models\DTO\EmpleadosDTO.vb" />
+    <Compile Include="Models\DTO\FichadasDTO.vb" />
+    <Compile Include="Models\Session.vb" />
+    <Compile Include="Formularios\WaitForm1.Designer.vb">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\WaitForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usrControl\xtraFechaDesdeHasta.Designer.vb">
+      <DependentUpon>xtraFechaDesdeHasta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usrControl\xtraFechaDesdeHasta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usrControl\xtraFinder.Designer.vb">
+      <DependentUpon>xtraFinder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usrControl\xtraFinder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usrControl\xtraInputBox.Designer.vb">
+      <DependentUpon>xtraInputBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usrControl\xtraInputBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmMainParent.resx">
+      <DependentUpon>frmMainParent.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMs\frmAbmAusenciaEmpleado.resx">
+      <DependentUpon>frmAbmAusenciaEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMs\frmAbmConvenio.resx">
+      <DependentUpon>frmAbmConvenio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMs\frmAbmEmpleado.resx">
+      <DependentUpon>frmAbmEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMs\frmAbmFeriado.resx">
+      <DependentUpon>frmAbmFeriado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMs\frmAbmFichadas.resx">
+      <DependentUpon>frmAbmFichadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMs\frmAbmGrupo.resx">
+      <DependentUpon>frmAbmGrupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMs\frmAbmHorario.resx">
+      <DependentUpon>frmAbmHorario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMs\frmAbmHorarioAdic.resx">
+      <DependentUpon>frmAbmHorarioAdic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMs\FrmAbmTipoAusencia.resx">
+      <DependentUpon>FrmAbmTipoAusencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABMs\frmAbmUsuarios.resx">
+      <DependentUpon>frmAbmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmBusqueda.resx">
+      <DependentUpon>frmBusqueda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmFichadasLectura.resx">
+      <DependentUpon>frmFichadasLectura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblPedidoAusencia.resx">
+      <DependentUpon>frmTblPedidoAusencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblUsuarios.resx">
+      <DependentUpon>frmTblUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblConvenios.resx">
+      <DependentUpon>frmTblConvenios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblEmpleados.resx">
+      <DependentUpon>frmTblEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblEventosFichadas.resx">
+      <DependentUpon>frmTblEventosFichadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblFeriados.resx">
+      <DependentUpon>frmTblFeriados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblGrupos.resx">
+      <DependentUpon>frmTblGrupos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblHorarios.resx">
+      <DependentUpon>frmTblHorarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblLiquidaciones.resx">
+      <DependentUpon>frmTblLiquidaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblTipoAusencias.resx">
+      <DependentUpon>frmTblTipoAusencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tablas\frmTblTraza.resx">
+      <DependentUpon>frmTblTraza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\WaitForm1.resx">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrControl\xtraFechaDesdeHasta.resx">
+      <DependentUpon>xtraFechaDesdeHasta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrControl\xtraFinder.resx">
+      <DependentUpon>xtraFinder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrControl\xtraInputBox.resx">
+      <DependentUpon>xtraInputBox.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Employees.Entities.Reloj.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dimLogo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backward_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editcontact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timelineview_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editcontact_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="if_tower_748987.ico" />
+    <Content Include="Resources\if_tower_748987.ico" />
+    <None Include="Resources\user_add1.png" />
+    <None Include="Resources\user_delete1.png" />
+    <None Include="Resources\user_delete.png" />
+    <None Include="Resources\user_add.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
