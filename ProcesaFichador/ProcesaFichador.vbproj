@@ -27,7 +27,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>119</ApplicationRevision>
+    <ApplicationRevision>120</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -135,9 +135,8 @@
     <Reference Include="Encriptacion">
       <HintPath>..\..\Generador\WorkinDirectory\Libraries\Encriptacion.dll</HintPath>
     </Reference>
-    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=5.8.1.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Generador\WorkinDirectory\Libraries\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    <Reference Include="FirebirdSql.Data.FirebirdClient">
+      <HintPath>..\..\FirebirdSql.Data.FirebirdClient-7.1.1-net452\FirebirdSql.Data.FirebirdClient.dll</HintPath>
     </Reference>
     <Reference Include="Lenox.Business">
       <HintPath>..\..\..\..\..\VStudio2015\LibariesLenox\Lenox.Business\bin\Lenox.Business.dll</HintPath>
