@@ -59,11 +59,6 @@ Public Class GeneradorCadena
     Private Function Encriptar(ByVal CadenaConexion As String) As String
         Dim algorithm As EncryptionAlgorithm
         algorithm = EncryptionAlgorithm.TripleDes
-
-        'Inicializo variables
-        Dim IV As Byte() = Nothing
-        Dim cipherText As Byte() = Nothing
-        Dim key As Byte() = Nothing
         Dim CadenaEncriptada As String = String.Empty
 
         Try
@@ -74,6 +69,10 @@ Public Class GeneradorCadena
             Dim plainText As Byte()
             plainText = Encoding.ASCII.GetBytes(CadenaConexion)
 
+
+            'Inicializo variables
+            Dim IV As Byte()
+            Dim key As Byte()
             If ((EncryptionAlgorithm.TripleDes = algorithm) Or (EncryptionAlgorithm.Rijndael = algorithm)) Then
                 '3Des only work with a 16 or 24 byte key.
                 'key = Encoding.ASCII.GetBytes("password12345678")
@@ -100,7 +99,7 @@ Public Class GeneradorCadena
             enc.IV = IV
 
             'Perform the encryption.
-            cipherText = enc.Encrypt(plainText, key)
+            Dim cipherText As Byte() = enc.Encrypt(plainText, key)
             ' Retrieve the intialization vector and key. You will need it
             'for decryption.
             IV = enc.IV

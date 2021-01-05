@@ -84,9 +84,6 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Conexion">
-      <HintPath>..\..\..\..\..\VStudio2015\Libraries\Libraries\Conexion.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.BonusSkins.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.CodeParser.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -129,9 +126,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\LibrariesEmployees\Employees.Business\bin\Employees.Entities.dll</HintPath>
     </Reference>
-    <Reference Include="Encriptacion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\VStudio2015\Libraries\Libraries\Encriptacion.dll</HintPath>
+    <Reference Include="Encriptacion">
+      <HintPath>..\..\Generador\WorkinDirectory\Libraries\Encriptacion.dll</HintPath>
     </Reference>
     <Reference Include="FirebirdSql.Data.FirebirdClient, Version=5.8.1.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -165,15 +161,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Turnos.Business">
-      <HintPath>..\..\Libraries\Turnos.Business\bin\Turnos.Business.dll</HintPath>
-    </Reference>
-    <Reference Include="Turnos.Data">
-      <HintPath>..\..\Libraries\Turnos.Business\bin\Turnos.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Turnos.Entities">
-      <HintPath>..\..\Libraries\Turnos.Business\bin\Turnos.Entities.dll</HintPath>
-    </Reference>
     <Reference Include="Turnos.GlobalFunctions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Generador\WorkinDirectory\Libraries\Turnos.GlobalFunctions.dll</HintPath>
